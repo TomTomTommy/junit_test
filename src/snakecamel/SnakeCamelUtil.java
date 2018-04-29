@@ -10,7 +10,7 @@ public class SnakeCamelUtil {
 		}
 		return new String(sb);
 	}
-	 
+
 	public static String camelToSnakecase(String camelcase) {
 		StringBuilder sb = new StringBuilder();
 		int j = 0;
@@ -28,7 +28,7 @@ public class SnakeCamelUtil {
 		sb.append(camelcase.substring(j));
 		return new String(sb);
 	}
-	
+
 	static String capitalize(String s) {
 		char first = s.charAt(0);
 		char upperFirst = Character.toUpperCase(first);
@@ -42,5 +42,5 @@ public class SnakeCamelUtil {
 		String rest = s.substring(1);
 		return lowerFirst + rest;
 	}
-	
+
 }
